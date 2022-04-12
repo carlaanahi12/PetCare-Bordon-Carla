@@ -372,7 +372,6 @@ h5 {
 }
 
 
-
 .parent {
     margin-top: 5%;
     display: grid;
@@ -380,11 +379,65 @@ h5 {
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    
     }
 
-.cepillo_baño {
-    width: 10px;
-    size: 20%;
+.cepillo_baño{
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
+.peine1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.peine2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.peine_gato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.garrapaticida {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.manopla {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfumes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shampoo_gato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shampoo_peloblanco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.antiparasitario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
