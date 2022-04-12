@@ -362,3 +362,29 @@ h4{
     grid-template-rows: 100px auto auto 100px;
     grid-template-columns: 50px auto 100px;
 }
+
+h5 {
+    font-family: estilodefuente;
+    font-size: 20px;
+    margin-top: 10%;
+    text-decoration: underline;
+    color: #3383FF;
+}
+
+
+
+.parent {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+.cepillo_baño {
+    width: 10px;
+    size: 20%;
+
+
+}
