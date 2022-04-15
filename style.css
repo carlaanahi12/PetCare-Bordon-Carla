@@ -61,6 +61,17 @@ main {
     grid-area: main;
 }
 
+.img-fluid {
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    background: #0e3298;
+    opacity: 0.4;
+}
+
 .sections {
     width: 75%;
     display: flex;
