@@ -165,6 +165,37 @@ footer{
 
 
 
+/* SERVICIOS */
+
+.servicios {
+    background-image: url("Images/fondo.jpg") ;
+    margin: auto;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.header-servicios::before {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* PRODUCTOS */
 
@@ -1182,86 +1213,99 @@ h5 {
 
 /*CONTACTO*/
 
-            .container-contacto {
-                background-image: url("Images/fondo.jpg") ;
-                width: 100%;
-                min-height: 100vh;
-               margin: auto;
+.container-contacto {
+    background-image: url("Images/fondo.jpg") ;
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
             }
+
+.header-contacto::before {
+    content: '';
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contacto {
+  
+}
+
+
+h4{
+    font-family: estilodefuente;
+    font-size: 50px;
+    margin-top: 100px;
+}
+.textcontacto {
+    font-family: estilodefuente;
+    font-size: 20px;
+}
+
+.speaker-form {
+    font-family: estilodefuente;
+    width: 50%;
+
+}
+            
+.form-row{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+            
+.form-row input[type="name"],
+.form-row input[type="apellido"]
+.form-row input[type="email"] {
+    background-color: #fff;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7%;
+    font-size: 14px;
+}
+            
+.form-row label {
+    margin-bottom: 15px;
+}
+            
+.form-row textarea {
+    font-size: 14px;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 7px;
+    min-height: 200px;
+    width: 100%;
+    resize: none;
+            
+}
+.form-row .instructions {
+    color: #999;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
             
             
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5995da;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
             
+.form-row button:hover {
+    background-color: #76aeed;
+}
             
-            
-            h4{
-                font-family: estilodefuente;
-                font-size: 50px;
-                margin-top: 60px;
-            }
-            .textcontacto {
-                font-family: estilodefuente;
-                font-size: 20px;
-            }
-            .speaker-form {
-                font-family: estilodefuente;
-            }
-            
-            .form-row{
-                margin-bottom: 40px;
-                display: flex;
-                justify-content: flex-start;
-                flex-direction: column;
-                flex-wrap: wrap;
-            }
-            
-            .form-row input[type="name"],
-            .form-row input[type="apellido"]
-            .form-row input[type="email"] {
-                background-color: #fff;
-                border: 1px solid #d6d9dc;
-                border-radius: 3px;
-                width: 100%;
-                padding: 7%;
-                font-size: 14px;
-            }
-            
-            .form-row label {
-                margin-bottom: 15px;
-            }
-            
-            .form-row textarea {
-                font-size: 14px;
-                border: 1px solid #d6d9dc;
-                border-radius: 3px;
-                margin-bottom: 10px;
-                padding: 7px;
-                min-height: 200px;
-                width: 100%;
-                resize: none;
-            
-            }
-            .form-row .instructions {
-                color: #999;
-                margin-bottom: 30px;
-                font-size: 14px;
-            }
-            
-            
-            .form-row button {
-                font-size: 16px;
-                font-weight: bold;
-                color: #fff;
-                background-color: #5995da;
-                border: none;
-                border-radius: 3px;
-                padding: 10px 40px;
-                cursor: pointer;
-            }
-            
-            .form-row button:hover {
-                background-color: #76aeed;
-            }
-            
-            .form-row button:active {
-                background-color: #407fc7;
-            }
+.form-row button:active {
+    background-color: #407fc7;
+}
