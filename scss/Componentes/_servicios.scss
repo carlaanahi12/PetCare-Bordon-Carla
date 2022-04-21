@@ -1,0 +1,73 @@
+
+/* SERVICIOS */
+
+.servicios {
+    background-image: url("Images/fondo.jpg") ;
+    margin: auto;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.header-servicios::before {
+    content: '';
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.grid-padre{
+    width: 90%;
+    margin-top: 150px;
+    margin-left: 50px;
+    box-shadow: 0 0 20px #333;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.table__title {
+    grid-column-start: 1 ;
+    grid-column-end: 4;
+    background: #800a0a;
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.9em;
+}
+
+.table__header, .table__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table__header {
+    font-weight: bold;
+    font-size: 1.5em;
+
+}
+
+.table__item {
+    padding: 10px;
+    font-size: 1.2em;
+
+}
+.table__header__premium {
+    background: gold;
+}
+
+.table__header__belleza {
+    background: green;
+}
+
+.table__header__basico {
+    background: pink;
+}
+
+
+

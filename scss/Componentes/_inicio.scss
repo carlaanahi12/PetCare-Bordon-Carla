@@ -1,0 +1,114 @@
+@font-face {
+    font-family: estilodefuente;
+    src: url(Playfair_Display/static/PlayfairDisplay-BoldItalic.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(Images/portada.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header::before {
+    content: '';
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info {
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+
+}
+
+@media (min-width: 768px){
+    .info {
+        background-color: transparent!important;
+    }
+}
+
+.navg {
+    color: #f4f4f4;
+    font-family: 'Montserrat';
+    font-size: 23px;
+    padding: 10px 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.navg a:hover {
+    background-color: #AF33FF;
+}
+
+.text-header {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-header span {
+    letter-spacing: 5px;
+    font-size: 1.3em;
+    margin: 0 0 0 5px;
+}
+h1 p {
+    font-weight: bold;
+}
+
+.text-header p {
+    font-size: 1rem;
+
+}
+
+.btn-yo {
+    padding: 7px 12px;
+    color: black;
+    background-color: #AF33FF;
+    font-weight: bold;
+}
+.btn-yo:hover {
+    color: black;
+    background-color: #AF33FF;
+}
+
+
+.card {
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* footer */
+.whatsapp {
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    width: 100px;
+}
+
+
+.text-center {
+    background-position: center bottom;
+    background-size: 80%;
+    background-repeat: repeat-x;
+    text-align: center;
+	padding: 0 0 30px ;
+    margin-bottom: 50px;
+	
+}
+
+

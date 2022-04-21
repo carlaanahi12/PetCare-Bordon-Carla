@@ -1,0 +1,23 @@
+{
+  "name": "petcare-bordon-carla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlaanahi12/PetCare-Bordon-Carla.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlaanahi12/PetCare-Bordon-Carla/issues"
+  },
+  "homepage": "https://github.com/carlaanahi12/PetCare-Bordon-Carla#readme",
+  "devDependencies": {
+    "node": "^17.7.2",
+    "nodemon": "^2.0.15"
+  }
+}

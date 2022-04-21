@@ -1,0 +1,53 @@
+
+/*CONÓCENOS*/
+
+.body1 {
+    background-image: url("Images/fondo.jpg"); 
+    margin: auto;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.header-conocenos::before {
+    content: '';
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h3 {
+    font-family: estilodefuente;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.conocenos {
+    font-family: estilodefuente;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 10% 50px;
+}
+
+.service{
+    font-family: estilodefuente;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row row-cols-1 row-cols-sm-2 g-3 {
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: #6fcfc7;
+}
+
+

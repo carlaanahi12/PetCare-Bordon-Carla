@@ -1,0 +1,1012 @@
+/* PRODUCTOS */
+
+.productos {
+    background-image: url("Images/fondo.jpg") ;
+    margin: auto;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.info {
+    content: '';
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+h5 {
+    font-family: estilodefuente;
+    font-size: 20px;
+    margin-top: 10%;
+    margin-left: 10%;
+    text-decoration: underline;
+    color: #3383FF;
+}
+
+
+.parent {
+    margin-top: 5%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-areas: 
+    "cepillo_baño                 peine1"
+    "peine2                   peine_gato"
+    "garrapaticida               manopla"
+    "perfumes               shampoo_gato"
+    "shampoo_peloblanco  antiparasitario";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+    
+/* animaciones primera imagen */
+    .cepillo_baño{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: cepillo_baño;
+        opacity: 1;
+        width: 100%;
+        -webkit-transition: opacity 0.35s;
+        transition: opacity 0.35s;
+        }
+        .cepillo_baño figcaption {
+            bottom: 0;
+            left: 0;
+            padding: 3em 3em;
+            width: 100%;
+            height: 100%;
+        }
+        
+        figure.cepillo_baño figcaption::before {
+                position: absolute;
+            top: 50%;
+            right: 30px;
+            bottom: 50%;
+            left: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+            content: '';
+            opacity: 0;
+            background-color: #ffffff;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        figure.cepillo_baño h6, figure.cepillo_baño p {
+                margin: 0 0 5px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+            }
+        figure.cepillo_baño h6 {
+                word-spacing: -0.15em;
+            font-weight: 300;
+            text-transform: uppercase;
+            -webkit-transform: translate3d(0%, 50%, 0);
+            transform: translate3d(0%, 50%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+            }
+        figure.cepillo_baño span {
+            font-weight: 800;
+        }
+        figure.cepillo_baño p {
+            font-weight: 200	;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        figure.cepillo_baño a {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            color: #800a0a;
+        }
+        
+        figure.cepillo_baño:hover img {
+            opacity: 0.35;
+        }
+        
+        figure.cepillo_baño:hover figcaption h6 {
+                opacity: 1;
+            -webkit-transform: translate3d(0%, 0%, 0);
+            transform: translate3d(0%, 0%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+        }
+        
+        figure.cepillo_baño:hover figcaption p {
+            opacity: 0.9;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        
+        figure.cepillo_baño:hover figcaption::before {
+                background: rgba(255, 255, 255, 0);
+            top: 30px;
+            bottom: 30px;
+            opacity: 1;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+            }
+        
+        
+        /* animaciones a la segunda imagen */
+        
+            .peine1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: peine1;
+            opacity: 1;
+            width: 100%;
+            -webkit-transition: opacity 0.35s;
+            transition: opacity 0.35s;
+            }
+        
+            .peine1 figcaption {
+                bottom: 0;
+                left: 0;
+                padding: 3em 3em;
+                width: 100%;
+                height: 100%;
+            }
+            
+            figure.peine1 figcaption::before {
+                position: absolute;
+                top: 50%;
+                right: 30px;
+                bottom: 50%;
+                left: 30px;
+                border-top: 1px solid rgba(255, 255, 255, 0.8);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+                content: '';
+                opacity: 0;
+                background-color: #ffffff;
+                -webkit-transition: all 0.4s;
+                transition: all 0.4s;
+                -webkit-transition-delay: 0.6s;
+                transition-delay: 0.6s;
+            }
+            figure.peine1 h6, figure.peine1 p {
+                    margin: 0 0 5px;
+                opacity: 0;
+                -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+                }
+            figure.peine1 h6 {
+                    word-spacing: -0.15em;
+                font-weight: 300;
+                text-transform: uppercase;
+                -webkit-transform: translate3d(0%, 50%, 0);
+                transform: translate3d(0%, 50%, 0);
+                -webkit-transition-delay: 0.3s;
+                transition-delay: 0.3s;
+                }
+            figure.peine1 span {
+                font-weight: 800;
+            }
+            figure.peine1 p {
+                font-weight: 200	;
+                -webkit-transition-delay: 0s;
+                transition-delay: 0s;
+            }
+            figure.peine1 a {
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                position: absolute;
+                color: #800a0a;
+            }
+            
+            figure.peine1:hover img {
+                opacity: 0.35;
+            }
+            
+            figure.peine1:hover figcaption h6 {
+                    opacity: 1;
+                -webkit-transform: translate3d(0%, 0%, 0);
+                transform: translate3d(0%, 0%, 0);
+                -webkit-transition-delay: 0.3s;
+                transition-delay: 0.3s;
+            }
+            
+            figure.peine1:hover figcaption p {
+                opacity: 0.9;
+                -webkit-transition-delay: 0.6s;
+                transition-delay: 0.6s;
+            }
+            
+            figure.peine1:hover figcaption::before {
+                    background: rgba(255, 255, 255, 0);
+                top: 30px;
+                bottom: 30px;
+                opacity: 1;
+                -webkit-transition-delay: 0s;
+                transition-delay: 0s;
+                }
+        
+        
+        /* animaciones tercera imagen */
+        
+        .peine2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: peine2;
+            opacity: 1;
+            width: 100%;
+            -webkit-transition: opacity 0.35s;
+            transition: opacity 0.35s;
+        }
+        
+        .peine2 figcaption {
+            bottom: 0;
+            left: 0;
+            padding: 3em 3em;
+            width: 100%;
+            height: 100%;
+        }
+        
+        figure.peine2 figcaption::before {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            bottom: 50%;
+            left: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+            content: '';
+            opacity: 0;
+            background-color: #ffffff;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        figure.peine2 h6, figure.peine2 p {
+                margin: 0 0 5px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+            }
+        figure.peine2 h6 {
+                word-spacing: -0.15em;
+            font-weight: 300;
+            text-transform: uppercase;
+            -webkit-transform: translate3d(0%, 50%, 0);
+            transform: translate3d(0%, 50%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+            }
+        figure.peine2 span {
+            font-weight: 800;
+        }
+        figure.peine2 p {
+            font-weight: 200	;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        figure.peine2 a {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            color: #800a0a;
+        }
+        
+        figure.peine2:hover img {
+            opacity: 0.35;
+        }
+        
+        figure.peine2:hover figcaption h6 {
+                opacity: 1;
+            -webkit-transform: translate3d(0%, 0%, 0);
+            transform: translate3d(0%, 0%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+        }
+        
+        figure.peine2:hover figcaption p {
+            opacity: 0.9;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        
+        figure.peine2:hover figcaption::before {
+            background: rgba(255, 255, 255, 0);
+            top: 30px;
+            bottom: 30px;
+            opacity: 1;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+            }
+        
+        
+        /*animaciones a cuarta imagen */
+        
+        .peine_gato{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: peine_gato;
+            opacity: 1;
+            width: 100%;
+            -webkit-transition: opacity 0.35s;
+            transition: opacity 0.35s;
+        }
+        
+        .peine_gato figcaption {
+            bottom: 0;
+            left: 0;
+            padding: 3em 3em;
+            width: 100%;
+            height: 100%;
+        }
+        
+        figure.peine_gato figcaption::before {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            bottom: 50%;
+            left: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+            content: '';
+            opacity: 0;
+            background-color: #ffffff;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        figure.peine_gato h6, figure.peine_gato p {
+            margin: 0 0 5px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+            }
+        figure.peine_gato h6 {
+                word-spacing: -0.15em;
+            font-weight: 300;
+            text-transform: uppercase;
+            -webkit-transform: translate3d(0%, 50%, 0);
+            transform: translate3d(0%, 50%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+            }
+        figure.peine_gato span {
+            font-weight: 800;
+        }
+        figure.peine_gato p {
+            font-weight: 200	;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        figure.peine_gato a {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            color: #800a0a;
+        }
+        
+        figure.peine_gato:hover img {
+            opacity: 0.35;
+        }
+        
+        figure.peine_gato:hover figcaption h6 {
+                opacity: 1;
+            -webkit-transform: translate3d(0%, 0%, 0);
+            transform: translate3d(0%, 0%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+        }
+        
+        figure.peine_gato:hover figcaption p {
+            opacity: 0.9;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        
+        figure.peine_gato:hover figcaption::before {
+            background: rgba(255, 255, 255, 0);
+            top: 30px;
+            bottom: 30px;
+            opacity: 1;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+            }
+        
+        
+        
+        /* animaciones quinta imagen */
+        
+        .garrapaticida {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: garrapaticida;
+            opacity: 1;
+            width: 100%;
+            -webkit-transition: opacity 0.35s;
+            transition: opacity 0.35s;
+        }
+        
+        .garrapaticida figcaption {
+            bottom: 0;
+            left: 0;
+            padding: 3em 3em;
+            width: 100%;
+            height: 100%;
+        }
+        
+        figure.garrapaticida figcaption::before {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            bottom: 50%;
+            left: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+            content: '';
+            opacity: 0;
+            background-color: #ffffff;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        figure.garrapaticida h6, figure.garrapaticida p {
+            margin: 0 0 5px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+            }
+        figure.garrapaticida h6 {
+                word-spacing: -0.15em;
+            font-weight: 300;
+            text-transform: uppercase;
+            -webkit-transform: translate3d(0%, 50%, 0);
+            transform: translate3d(0%, 50%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+            }
+        figure.garrapaticida span {
+            font-weight: 800;
+        }
+        figure.garrapaticida p {
+            font-weight: 200	;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        figure.garrapaticida a {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            color: #800a0a;
+        }
+        
+        figure.garrapaticida:hover img {
+            opacity: 0.35;
+        }
+        
+        figure.garrapaticida:hover figcaption h6 {
+                opacity: 1;
+            -webkit-transform: translate3d(0%, 0%, 0);
+            transform: translate3d(0%, 0%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+        }
+        
+        figure.garrapaticida:hover figcaption p {
+            opacity: 0.9;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        
+        figure.garrapaticida:hover figcaption::before {
+            background: rgba(255, 255, 255, 0);
+            top: 30px;
+            bottom: 30px;
+            opacity: 1;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+            }
+        
+        
+        
+        /* animaciones sexta imagen */
+        
+        .manopla {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: manopla;
+            opacity: 1;
+            width: 100%;
+            -webkit-transition: opacity 0.35s;
+            transition: opacity 0.35s;
+        }
+        
+        .manopla figcaption {
+            bottom: 0;
+            left: 0;
+            padding: 3em 3em;
+            width: 100%;
+            height: 100%;
+        }
+        
+        figure.manopla figcaption::before {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            bottom: 50%;
+            left: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+            content: '';
+            opacity: 0;
+            background-color: #ffffff;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        figure.manopla h6, figure.manopla p {
+            margin: 0 0 5px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+            }
+        figure.manopla h6 {
+                word-spacing: -0.15em;
+            font-weight: 300;
+            text-transform: uppercase;
+            -webkit-transform: translate3d(0%, 50%, 0);
+            transform: translate3d(0%, 50%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+            }
+        figure.manopla span {
+            font-weight: 800;
+        }
+        figure.manopla p {
+            font-weight: 200	;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        figure.manopla a {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            color: #800a0a;
+        }
+        
+        figure.manopla:hover img {
+            opacity: 0.35;
+        }
+        
+        figure.manopla:hover figcaption h6 {
+                opacity: 1;
+            -webkit-transform: translate3d(0%, 0%, 0);
+            transform: translate3d(0%, 0%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+        }
+        
+        figure.manopla:hover figcaption p {
+            opacity: 0.9;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        
+        figure.manopla:hover figcaption::before {
+            background: rgba(255, 255, 255, 0);
+            top: 30px;
+            bottom: 30px;
+            opacity: 1;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+            }
+        
+        /*animaciones septima imagen */
+        
+        .perfumes {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: perfumes;
+            opacity: 1;
+            width: 100%;
+            -webkit-transition: opacity 0.35s;
+            transition: opacity 0.35s;
+        }
+        
+        .perfumes figcaption {
+            bottom: 0;
+            left: 0;
+            padding: 3em 3em;
+            width: 100%;
+            height: 100%;
+        }
+        
+        figure.perfumes figcaption::before {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            bottom: 50%;
+            left: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+            content: '';
+            opacity: 0;
+            background-color: #ffffff;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        figure.perfumes h6, figure.perfumes p {
+            margin: 0 0 5px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+            }
+        figure.perfumes h6 {
+                word-spacing: -0.15em;
+            font-weight: 300;
+            text-transform: uppercase;
+            -webkit-transform: translate3d(0%, 50%, 0);
+            transform: translate3d(0%, 50%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+            }
+        figure.perfumes span {
+            font-weight: 800;
+        }
+        figure.perfumes p {
+            font-weight: 200	;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        figure.perfumes a {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            color: #800a0a;
+        }
+        
+        figure.perfumes:hover img {
+            opacity: 0.35;
+        }
+        
+        figure.perfumes:hover figcaption h6 {
+                opacity: 1;
+            -webkit-transform: translate3d(0%, 0%, 0);
+            transform: translate3d(0%, 0%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+        }
+        
+        figure.perfumes:hover figcaption p {
+            opacity: 0.9;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        
+        figure.perfumes:hover figcaption::before {
+            background: rgba(255, 255, 255, 0);
+            top: 30px;
+            bottom: 30px;
+            opacity: 1;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+            }
+        
+        
+        /*animaciones octava imagen*/
+        
+        .shampoo_gato {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: shampoo_gato;
+            opacity: 1;
+            width: 100%;
+            -webkit-transition: opacity 0.35s;
+            transition: opacity 0.35s;
+        }
+        
+        .shampoo_gato figcaption {
+            bottom: 0;
+            left: 0;
+            padding: 3em 3em;
+            width: 100%;
+            height: 100%;
+        }
+        
+        figure.shampoo_gato figcaption::before {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            bottom: 50%;
+            left: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+            content: '';
+            opacity: 0;
+            background-color: #ffffff;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        figure.shampoo_gato h6, figure.shampoo_gato p {
+            margin: 0 0 5px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+            }
+        figure.shampoo_gato h6 {
+                word-spacing: -0.15em;
+            font-weight: 300;
+            text-transform: uppercase;
+            -webkit-transform: translate3d(0%, 50%, 0);
+            transform: translate3d(0%, 50%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+            }
+        figure.shampoo_gato span {
+            font-weight: 800;
+        }
+        figure.shampoo_gato p {
+            font-weight: 200	;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        figure.shampoo_gato a {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            color: #800a0a;
+        }
+        
+        figure.shampoo_gato:hover img {
+            opacity: 0.35;
+        }
+        
+        figure.shampoo_gato:hover figcaption h6 {
+                opacity: 1;
+            -webkit-transform: translate3d(0%, 0%, 0);
+            transform: translate3d(0%, 0%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+        }
+        
+        figure.shampoo_gato:hover figcaption p {
+            opacity: 0.9;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        
+        figure.shampoo_gato:hover figcaption::before {
+            background: rgba(255, 255, 255, 0);
+            top: 30px;
+            bottom: 30px;
+            opacity: 1;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+            }
+        
+        /* animaciones novena imagen */
+        
+        .shampoo_peloblanco {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: shampoo_peloblanco;
+            opacity: 1;
+            width: 100%;
+            -webkit-transition: opacity 0.35s;
+            transition: opacity 0.35s;
+        }
+        
+        .shampoo_peloblanco figcaption {
+            bottom: 0;
+            left: 0;
+            padding: 3em 3em;
+            width: 100%;
+            height: 100%;
+        }
+        
+        figure.shampoo_peloblanco figcaption::before {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            bottom: 50%;
+            left: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+            content: '';
+            opacity: 0;
+            background-color: #ffffff;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        figure.shampoo_peloblanco h6, figure.shampoo_peloblanco p {
+            margin: 0 0 5px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+            }
+        figure.shampoo_peloblanco h6 {
+                word-spacing: -0.15em;
+            font-weight: 300;
+            text-transform: uppercase;
+            -webkit-transform: translate3d(0%, 50%, 0);
+            transform: translate3d(0%, 50%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+            }
+        figure.shampoo_peloblanco span {
+            font-weight: 800;
+        }
+        figure.shampoo_peloblanco p {
+            font-weight: 200	;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        figure.shampoo_peloblanco a {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            color: #800a0a;
+        }
+        
+        figure.shampoo_peloblanco img {
+            opacity: 0.35;
+        }
+        
+        figure.shampoo_peloblanco:hover figcaption h6 {
+                opacity: 1;
+            -webkit-transform: translate3d(0%, 0%, 0);
+            transform: translate3d(0%, 0%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+        }
+        
+        figure.shampoo_peloblanco:hover figcaption p {
+            opacity: 0.9;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        
+        figure.shampoo_peloblanco:hover figcaption::before {
+            background: rgba(255, 255, 255, 0);
+            top: 30px;
+            bottom: 30px;
+            opacity: 1;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+            }
+        
+        /* animaciones a la decima imagen de productos */
+        
+        .antiparasitario {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: antiparasitario;
+            opacity: 1;
+            width: 100%;
+            -webkit-transition: opacity 0.35s;
+            transition: opacity 0.35s;
+        }
+        
+        .antiparasitario figcaption {
+            bottom: 0;
+            left: 0;
+            padding: 3em 3em;
+            width: 100%;
+            height: 100%;
+        }
+        
+        figure.antiparasitario figcaption::before {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            bottom: 50%;
+            left: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+            content: '';
+            opacity: 0;
+            background-color: #ffffff;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        figure.antiparasitario h6, figure.antiparasitario p {
+            margin: 0 0 5px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+            }
+        figure.antiparasitario h6 {
+                word-spacing: -0.15em;
+            font-weight: 300;
+            text-transform: uppercase;
+            -webkit-transform: translate3d(0%, 50%, 0);
+            transform: translate3d(0%, 50%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+            }
+        figure.antiparasitario span {
+            font-weight: 800;
+        }
+        figure.antiparasitario p {
+            font-weight: 200	;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        figure.antiparasitario a {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            color: #800a0a;
+        }
+        
+        figure.antiparasitario img {
+            opacity: 0.35;
+        }
+        
+        figure.antiparasitario:hover figcaption h6 {
+                opacity: 1;
+            -webkit-transform: translate3d(0%, 0%, 0);
+            transform: translate3d(0%, 0%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+        }
+        
+        figure.antiparasitario:hover figcaption p {
+            opacity: 0.9;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+        
+        figure.antiparasitario:hover figcaption::before {
+            background: rgba(255, 255, 255, 0);
+            top: 30px;
+            bottom: 30px;
+            opacity: 1;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+            }
