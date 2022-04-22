@@ -18,13 +18,15 @@ body {
     background-attachment: fixed;
 }
 
-header::before {
-    content: '';
-    width: 100%;
-    min-height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
+header {
+    &:before {
+        content: '';
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
 
 .info {
@@ -49,8 +51,10 @@ header::before {
     text-transform: uppercase;
 }
 
-.navg a:hover {
-    background-color: #AF33FF;
+.navg {
+    &:hover {
+        background-color: #AF33FF;
+    }
 }
 
 .text-header {
@@ -60,17 +64,23 @@ header::before {
     align-items: center;
 }
 
-.text-header span {
-    letter-spacing: 5px;
-    font-size: 1.3em;
-    margin: 0 0 0 5px;
+.text-header {
+    span {
+        letter-spacing: 5px;
+        font-size: 1.3em;
+        margin: 0 0 0 5px;
+    }
 }
-h1 p {
-    font-weight: bold;
+h1 {
+    p {
+        font-weight: bold;
+    }
 }
 
-.text-header p {
-    font-size: 1rem;
+.text-header {
+    p {
+        font-size: 1rem;
+    }
 
 }
 
@@ -80,9 +90,11 @@ h1 p {
     background-color: #AF33FF;
     font-weight: bold;
 }
-.btn-yo:hover {
+.btn-yo {
+    &:hover {
     color: black;
     background-color: #AF33FF;
+    }
 }
 
 
