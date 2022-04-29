@@ -1,0 +1,18 @@
+/* Error: Top-level selectors may not contain the parent selector "&".
+ *    ,
+ * 10 | header &:before {
+ *    | ^^^^^^^^^^^^^^^^
+ *    '
+ *   scss\componentes\_inicio.scss 10:1  @import
+ *   scss\style.scss 14:9                root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Top-level selectors may not contain the parent selector "&".\a    \2577 \a 10 \2502  header &:before {\d\a    \2502  ^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\componentes\\_inicio.scss 10:1  @import\a   scss\\style.scss 14:9                root stylesheet';
+}

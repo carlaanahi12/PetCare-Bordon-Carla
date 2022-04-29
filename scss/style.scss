@@ -1,6 +1,23 @@
-@import 'componentes/inicio';
-@import 'componentes/conocenos';
-@import 'componentes/servicios';
-@import 'componentes/productos';
-@import 'componentes/contacto';
-@import 'base/listas';
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Playfair_Display/static/PlayfairDisplay-BoldItalic.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*COMPONENTES*/
+@import '../scss/Componentes/inicio';
+@import '../scss/Componentes/conocenos';
+@import '../scss/Componentes/servicios';
+@import '../scss/Componentes/productos';
+@import '../scss/Componentes/contacto';
+
+/*BASE*/
+@import '../SCSS/Base/listas';
+@import '../SCSS/Base/variables';
+@import '../scss/Base/mapas'

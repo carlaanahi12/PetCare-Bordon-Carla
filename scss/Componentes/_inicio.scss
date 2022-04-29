@@ -1,25 +1,16 @@
-@font-face {
-    font-family: estilodefuente;
-    src: url(Playfair_Display/static/PlayfairDisplay-BoldItalic.ttf);
-}
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@import '../Base/variables'; 
 
 body {
     width: 100%;
     min-height: 100vh;
-    background-image: url(Images/portada.png);
+    background-image: url(../Base/Images/portada.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
 
-header {
-    &:before {
+header{
+    &::before {
         content: '';
         width: 100%;
         min-height: 100vh;
@@ -44,18 +35,19 @@ header {
 
 .navg {
     color: #f4f4f4;
-    font-family: 'Montserrat';
+    font-family: $fuente-montserrat ;
     font-size: 23px;
     padding: 10px 15px;
     text-align: center;
     text-transform: uppercase;
-}
-
-.navg {
-    &:hover {
-        background-color: #AF33FF;
+    a {
+        &:hover {
+            background-color: #AF33FF;
+        }
     }
 }
+
+
 
 .text-header {
     min-height: 100vh;
@@ -66,21 +58,23 @@ header {
 
 .text-header {
     span {
-        letter-spacing: 5px;
-        font-size: 1.3em;
-        margin: 0 0 0 5px;
+    letter-spacing: 5px;
+    font-size: 1.3em;
+    margin: 0 0 0 5px;
     }
 }
 h1 {
     p {
         font-weight: bold;
     }
+
 }
 
 .text-header {
     p {
         font-size: 1rem;
     }
+
 
 }
 
@@ -91,10 +85,11 @@ h1 {
     font-weight: bold;
 }
 .btn-yo {
-    &:hover {
-    color: black;
-    background-color: #AF33FF;
+    &:hover  {
+        color: black;
+        background-color: #AF33FF;
     }
+
 }
 
 
