@@ -1,24 +1,18 @@
 @import '../Base/variables'; 
+@import '../Base/listas';
 
-body {
-    width: 100%;
-    min-height: 100vh;
-    background-image: url(../Base/Images/portada.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
 
 header{
-    &::before {
-        content: '';
+        background-image: linear-gradient(to top, rgba(161, 140, 209, 0.555) 0%, rgba(251, 194, 235, 0.644) 100%), url('../../Images/portada.png');
         width: 100%;
-        min-height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
+        height: 650px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
     }
-}
 
 .info {
     position: fixed;
@@ -50,47 +44,64 @@ header{
 
 
 .text-header {
-    min-height: 100vh;
+    height: 500px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.text-header {
     span {
-    letter-spacing: 5px;
-    font-size: 1.3em;
-    margin: 0 0 0 5px;
-    }
+        letter-spacing: 5px;
+        font-size: 1.3em;
+        margin: 0 0 0 5px;
+        }
 }
+
+
 h1 {
-    p {
-        font-weight: bold;
-    }
-
-}
-
-.text-header {
-    p {
-        font-size: 1rem;
-    }
-
-
-}
-
-.btn-yo {
-    padding: 7px 12px;
+    font-size: 60px;
+    display: flex;
+    justify-content: left;
     color: black;
-    background-color: #AF33FF;
+    font-family: 'Raleway';
     font-weight: bold;
 }
+
+
 .btn-yo {
-    &:hover  {
-        color: black;
-        background-color: #AF33FF;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: #a18cd1;
+    border-radius: 18px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+
+
+.svg-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     }
 
-}
+
+    p {
+        font-size: 40px;
+        margin: 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway';
+        font-weight: bold;
+    }
+    
+
+
 
 
 .card {

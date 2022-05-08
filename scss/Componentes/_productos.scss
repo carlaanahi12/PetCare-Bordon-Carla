@@ -180,26 +180,30 @@ h5 {
             }
         }
         
-        figure.cepillo_baño &:hover {
-            figcaption h6 {
-            opacity: 1;
-            -webkit-transform: translate3d(0%, 0%, 0);
-            transform: translate3d(0%, 0%, 0);
-            -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
-        }
-
-        }
-        
-        figure.cepillo_baño &:hover {
-            figcaption {
-                p {
-                    opacity: 0.9;
-                    -webkit-transition-delay: 0.6s;
-                    transition-delay: 0.6s;
+        figure.cepillo_baño {
+            &:hover {
+                figcaption h6 {
+                opacity: 1;
+                -webkit-transform: translate3d(0%, 0%, 0);
+                transform: translate3d(0%, 0%, 0);
+                -webkit-transition-delay: 0.3s;
+                transition-delay: 0.3s;
                 }
             }
+        } 
 
+  
+        
+        figure.cepillo_baño {
+            &:hover {
+                figcaption {
+                    p {
+                        opacity: 0.9;
+                        -webkit-transition-delay: 0.6s;
+                        transition-delay: 0.6s;
+                    }   
+                }
+            }
         }
         
         figure.cepillo_baño:hover {
