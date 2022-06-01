@@ -43,7 +43,7 @@ header {
   text-transform: uppercase;
 }
 .navg a:hover {
-  background-color: #AF33FF;
+  background-color: #af33ff;
 }
 
 .text-header {
@@ -90,7 +90,6 @@ h1 {
 
 p {
   font-size: 40px;
-  margin: 20px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,6 +103,66 @@ p {
   margin-right: 10%;
 }
 
+.card-text {
+  font-family: "Raleway";
+}
+
+.card-img-top {
+  font-family: "Raleway";
+}
+
+.galeria, p {
+  width: 90%;
+  max-width: 1000px;
+  overflow: hidden;
+  margin: auto;
+  padding: 0 0 80px 0;
+}
+
+.titulo {
+  font-weight: 300;
+  font-size: 35px;
+  font-family: "Raleway";
+  text-align: center;
+  margin: 40px 0 30px 0;
+}
+
+.galeria {
+  background: #f2f2f2;
+}
+
+.galeria-cont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.galeria-cont > img {
+  width: 30%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  display: block;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .text-header h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .titulo {
+    font-size: 35px;
+  }
+
+  .galeria-cont > img {
+    width: 48%;
+  }
+}
 /* footer */
 .whatsapp {
   position: fixed;
@@ -118,12 +177,11 @@ p {
   background-repeat: repeat-x;
   text-align: center;
   padding: 0 0 30px;
-  margin-bottom: 50px;
 }
 
 /*CONÓCENOS*/
 .body1 {
-  background-image: url("../../Images/fondo.jpg");
+  background-image: url("../Base/Images/fondo.jpg");
   margin: auto;
   width: 100%;
   min-height: 100vh;
@@ -169,14 +227,14 @@ h3 {
 }
 
 .conocenos {
-  font-family: "Antonio";
+  font-family: "Raleway";
   text-align: center;
   font-size: 20px;
   margin: 0 10% 50px;
 }
 
 .service {
-  font-family: "Antonio";
+  font-family: "Raleway";
   margin-bottom: 100px;
   display: flex;
   justify-content: center;
@@ -188,6 +246,10 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card-text {
+  font-size: 20px;
 }
 
 footer {
@@ -1349,6 +1411,7 @@ figure.antiparasitario:hover figcaption::before {
   background-image: url("../Base/Images/fondo.jpg");
   width: 100%;
   min-height: 100vh;
+  margin: auto;
 }
 
 .header-contacto::before {
@@ -1366,7 +1429,7 @@ figure.antiparasitario:hover figcaption::before {
   width: 100%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .info-contacto {
     background-color: transparent !important;
   }
@@ -1380,10 +1443,74 @@ figure.antiparasitario:hover figcaption::before {
   text-transform: uppercase;
 }
 .navg a:hover {
-  background-color: #AF33FF;
+  background-color: #af33ff;
 }
 
-/* FOOTER */
+.speaker-form {
+  font-family: "Antonio";
+  width: 50%;
+  margin-top: 50px;
+}
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type=name],
+.form-row input[type=apellido] .form-row input[type=email] {
+  background-color: #fff;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7%;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+}
+
+.form-row textarea {
+  font-size: 14px;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 7px;
+  min-height: 200px;
+  width: 100%;
+  resize: none;
+}
+
+.form-row .instructions {
+  color: #999;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5995da;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+button .form-row:hover {
+  background-color: #76aeed;
+}
+
+button .form-row:active {
+  background-color: #407fc7;
+}
+
+/* footer */
 .whatsapp {
   position: fixed;
   bottom: 10px;
@@ -1393,11 +1520,10 @@ figure.antiparasitario:hover figcaption::before {
 
 .text-center {
   background-position: center bottom;
-  background-size: 100%;
+  background-size: 80%;
   background-repeat: repeat-x;
   text-align: center;
   padding: 0 0 30px;
-  margin-bottom: 50px;
 }
 
 /*BASE*/
