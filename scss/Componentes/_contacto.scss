@@ -6,7 +6,6 @@
     background-image: url("../Base/Images/fondo.jpg") ;
     width: 100%;
     min-height: 100vh;
-    margin: auto;
             }
 
 
@@ -29,7 +28,7 @@
 
 }
 
-@media (min-width: 768px){
+@media (min-width: 900px){
     .info-contacto {
         background-color: transparent!important;
     }
@@ -52,93 +51,22 @@
 
 
 
-.speaker-form {
-    font-family: $fuente-antonio;
-    width: 50%;
-    margin-top: 50px;
-
-}
-            
-.form-row{
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-            
-.form-row input[type="name"],
-.form-row input[type="apellido"]
-.form-row input[type="email"] {
-    background-color: #fff;
-    border: 1px solid #d6d9dc;
-    border-radius: 3px;
-    width: 100%;
-    padding: 7%;
-    font-size: 14px; 
-}
-            
-.form-row {
-    label {
-        margin-bottom: 15px;
-    }
-
-}
-            
-.form-row {
-    textarea {
-        font-size: 14px;
-        border: 1px solid #d6d9dc;
-        border-radius: 3px;
-        margin-bottom: 10px;
-        padding: 7px;
-        min-height: 200px;
-        width: 100%;
-        resize: none;
-    }
-            
-}
-.form-row {
-    .instructions {
-        color: #999;
-        margin-bottom: 30px;
-        font-size: 14px;
-    }
-
-}
-            
-            
-.form-row {
-    button {
-        font-size: 16px;
-        font-weight: bold;
-        color: #fff;
-        background-color: #5995da;
-        border: none;
-        border-radius: 3px;
-        padding: 10px 40px;
-        cursor: pointer;
-    }
-
-}
-            
-.form-row {
-    button &:hover {
-        background-color: #76aeed;
-    }
-    
-}
-            
-.form-row {
-    button &:active {
-        background-color: #407fc7;
-    }
-
-}
 
 
 
-/* footer */
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
 .whatsapp {
     position: fixed;
     bottom: 10px;
@@ -149,7 +77,7 @@
 
 .text-center {
     background-position: center bottom;
-    background-size: 80%;
+    background-size: 100%;
     background-repeat: repeat-x;
     text-align: center;
 	padding: 0 0 30px ;
