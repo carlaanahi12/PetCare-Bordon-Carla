@@ -387,12 +387,11 @@ footer {
 }
 
 h5 {
-  font-family: "Antonio";
-  font-size: 20px;
-  margin-top: 10%;
-  margin-left: 10%;
+  font-family: "Raleway";
+  font-size: 30px;
+  margin: 0 20px 0 20px;
   text-decoration: underline;
-  color: #3383FF;
+  color: #ff3333;
 }
 
 .parent {
