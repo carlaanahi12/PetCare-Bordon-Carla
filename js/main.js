@@ -1,49 +1,105 @@
-alert ("Bienvenidos a nuestra tienda")
-let carrito = 0
-const peineGatos = 300
-const peinePerros = 300
-const shampooPerros = 250
-const shampooGatos = 250
-const perfumes = 80
-const garrapaticida = 150
-const antiparasitario = 100
-let cantpeineGatos
-let cantpeinePerros
-let cantshampooPerros
-let cantshampooGatos
-let cantPerfumes
-let cantGarrapaticida
-let cantAntiparasitario
-
-
-
-function sumar () {
-    for (let i = 1; i <= 8 ; i++) {
-        let ingreso = parseInt(prompt("sumar: \n 1-peineGatos \n 2-peinePerros \n 3-shampooPerros \n 4-shampooGatos \n 5-perfumes \n 6-garrapaticida \n 7-antiparasitario \n Salir"))
-        if (ingreso == 1){
-            cantpeineGatos = parseInt(prompt("ingrese cantidad de peines para gatos"))
-            carrito = cantpeineGatos * peineGatos
-        }else if (ingreso == 2){
-            cantpeinePerros = parseInt(prompt("ingrese cantidad de peines para perros"))
-            carrito = cantpeinePerros * peinePerros
-        }else if (ingreso == 3){
-            cantshampooPerros = parseInt(prompt("ingrese cantidad de shampoos para perros"))
-            carrito = cantshampooPerros * shampooPerros
-        }else if (ingreso == 4){
-            cantshampooGatos = parseInt(prompt("ingrese cantidad de shampoos para gatos"))
-            carrito = cantshampooGatos * shampooGatos
-        }else if (ingreso == 5){
-            cantPerfumes = parseInt(prompt("ingrese cantidad de perfumes"))
-            carrito = cantPerfumes * perfumes
-        }else if (ingreso == 6){
-            cantGarrapaticida = parseInt(prompt("ingrese cantidad de garrapaticidas"))
-            carrito = cantGarrapaticida * garrapaticida
-        }else if (ingreso == 7){
-            cantAntiparasitario = parseInt(prompt("ingrese cantidad de antiparasitarios"))
-            carrito = cantAntiparasitario * antiparasitario
-        }else if (ingreso == 8){
-            console.log(`El total de la compra es: ${carrito} \n peineGatos: ${cantpeineGatos} \n peinePerros: ${shampooPerros} \n shampooPerros: ${cantshampooPerros} \n shampooGatos: ${cantshampooGatos} \n perfumes: ${cantPerfumes} \n garrapaticida: ${cantGarrapaticida} \n antiparasitario: ${cantAntiparasitario}`)
-            break
-        }
+class Producto {
+    constructor (id, nombre, precio, categoria){
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.categoria = categoria;
     }
+mostrarProducto (){
+    return "id:" +
+    this.id + 
+    "precio: " +
+    this.precio + 
+    "" +
+    "producto: " +
+    this.categoria +
+    "\n";
 }
+}
+
+function comprar (nombre,email,tel,productosEnCarro){
+    let cant = productosEnCarro.reduce((acc, item)=> item.precio + acc, 0);
+    alert (
+        "Gracias" +
+        nombre + 
+        " por tu compra. \n Total: $" + cant);
+}
+    
+
+
+let productos = [
+new Producto(100, "cepillo de baño", 100, "productoparaMascotas"),
+new Producto(101, "peine grande", 100, "productosparaMascotas"),
+new Producto(102, "peine chico", 80, "productosparaMascotas"), 
+new Producto(103, "peine para gatos", 105, "productosparaMascotas"), 
+new Producto(104, "garrapaticida", 200, "productosparaMascotas"), 
+new Producto(105, "manopla", 400, "productosparaMascotas"), 
+new Producto(106, "perfumes", 450, "productosparaMascotas"), 
+new Producto(107, "shampoo para gatos", 350, "productosparaMascotas"), 
+new Producto(108, "shampoo para gatos", 300, "productosparaMascotas"), 
+new Producto(109, "shampoo para pelo blanco", 450, "productosparaMascotas"), 
+new Producto(110, "antiparasitario", 478, "productosparaMascotas"),
+];
+
+let nombres = ["cepillo de baño", "peine grande", "peine chico", "peine para gatos", "garrapaticida", "manopla", "perfumes", "shampoo para gatos", "shampoo para pelo blanco", "antiparasitario"];
+
+let productosEnCarro = [];
+
+
+let nombre = ""; 
+
+
+
+while (nombre != "salir" && nombre != null) {
+let aux = nombres.join(",");
+nombre = prompt("ingrese nombre para comprar o ingrese salir: \n(" + 
+aux + 
+")"
+);
+
+if (nombre != "salir"){
+let productosFiltradoPorNombre = productos.filter(
+(item) => (item.nombre == nombre)
+);
+
+
+let cartel = "";
+for (let i = 0; i < productosFiltradoPorNombre.length; ++i){
+cartel +=
+"id" +
+productosFiltradoPorNombre[i].id + 
+"precio" +
+productosFiltradoPorNombre[i].precio + 
+"" +
+"producto: " +
+productosFiltradoPorNombre[i].categoria +
+"\n";
+}
+
+
+
+let idSeleccionado = parseInt(
+prompt(
+"seleccione id del producto que quiere comprar: \n\n" + cartel
+)
+);
+let productoParaCarro = productosFiltradoPorNombre.find(
+(item) => item.id == idSeleccionado
+);
+if (productoParaCarro) {
+productosEnCarro.push(productoParaCarro);
+}
+}
+}
+
+
+
+
+if(productosEnCarro.length > 0) {
+    alert("Ingrese sus datos para terminar su compra");
+    let nombre = prompt("Ingrese su nombre");
+    let email = prompt("Ingrese su email");
+    let tel = prompt("Ingrese su tel");
+    comprar (nombre,email,tel,productosEnCarro);
+}
+
