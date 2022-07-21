@@ -42,11 +42,10 @@ content="Nos dedicamos al aseo de tu mascota con la pasión, cuidado y dedicaci�
 />
 
 <title>Productos</title>
+
 </head>
 
 <body class="productos">
-<script src="js/main.js"></script>
-
 
 <!-- HEADER -->
 
@@ -67,9 +66,7 @@ content="Nos dedicamos al aseo de tu mascota con la pasión, cuidado y dedicaci�
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navg navbar-nav w-100 justify-content-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Inicio</a
-                >
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Conocenos.html">Conócenos</a>
@@ -84,6 +81,8 @@ content="Nos dedicamos al aseo de tu mascota con la pasión, cuidado y dedicaci�
                 <a class="nav-link" href="Contacto.html">Contacto</a>
               </li>
             </ul>
+            <img src="productos/icons8-agregar-a-carrito-de-compras-80.png" alt="">
+            <a href="comprar.html">Terminar Compra</a>
           </div>
         </nav>
       </div>
@@ -93,136 +92,96 @@ content="Nos dedicamos al aseo de tu mascota con la pasión, cuidado y dedicaci�
 
 <!-- SECTION -->
     <section>
-      <h5>
-        Te ofrecemos algunos de nuestros productos para continuar con el cuidado de tu mascota.
-      </h5>
-      <div>
-      <a href="comprar.html">Terminar Compra</a>
-      </div>
-
-      <div class="parent">
-        <figure class="cepillo_baño">
-          <img src="productos/cepillo para baño.jpg" alt="cepillo de baño" />
-          <figcaption>
-            <p>
-              Peine masajeador de baño
-              Id: 100
-              precio: $100
-            </p>
-          </figcaption>
-          <button>Agregar al carro</button>
-        </figure>
-
-        <figure class="peine1">
-          <img class="peine1" src="productos/peine.png" alt="peine1" />
-          <figcaption>
-            <p>Cepillo para perros grandes
-              Id: 100
-              precio: $100
-            </p>
-          </figcaption>
-          <button>Agregar al carro</button>
-        </figure>
-
-        <figure class="peine2">
-          <img src="productos/peine2.jpg" alt="peine2" />
-          <figcaption>
-            <p>
-              Cepillo para perros pequeños
-              Id: 100
-              precio: $100
-            </p>
-          </figcaption>
-          <button>Agregar al carro</button>
-        </figure>
-
-        <figure class="peine-gato">
-          <img src="productos/peine para gato.png" alt="peine para gato" />
-          <figcaption>
-            <p>
-              Cepillo para gatos
-              Id: 100
-              precio: $100
-            </p>
-          </figcaption>
-          <button>Agregar al carro</button>
-        </figure>
-
-        <figure class="garrapaticida">
-          <img src="productos/garrapaticida.jpg" alt="garrapaticida" />
-          <figcaption>
-            <p>
-              Garrapaticida
-              Id: 100
-              precio: $100
-            </p>
-          </figcaption>
-          <button>Agregar al carro</button>
-        </figure>
-
-        <figure class="manopla">
-          <img src="productos/manopla para baño.jpg" alt="manopla" />
-          <figcaption>
-            <p>
-              Manopla para pelos de perros
-              Id: 100
-              precio: $100
-            </p>
-          </figcaption>
-          <button>Agregar al carro</button>
-        </figure>
-
-        <figure class="perfumes">
-          <img src="productos/perfumes.jpg" alt="perfumes" />
-          <figcaption>
-            <p>
-              Perfumes para perros macho y hembra
-              Id: 100
-              precio: $100
-            </p>
-          </figcaption>
-          <button>Agregar al carro</button>
-        </figure>
-
-        <figure class="shampoo_gato">
-          <img src="productos/shampoo para gato.jpg" alt="shampoo para gato" />
-          <figcaption>
-            <p>
-              Shampoo para gatos
-              Id: 100
-              precio: $100
-            </p>
-          </figcaption>
-          <button>Agregar al carro</button>
-        </figure>
-
-        <figure class="shampoo_peloblanco">
-          <img
-            src="productos/shampoo para pelo blanco.jpg"
-            alt="shampoo para pelo blanco"/>
-          <figcaption>
-            <p>
-              Shampoo para pelo blanco
-              Id: 100
-              precio: $100
-            </p>
-          </figcaption>
-          <button>Agregar al carro</button>
-        </figure>
-
-        <figure class="antiparasitario">
-          <img
-            src="productos/antiparasotario para gatos.jpg"
-            alt="antiparasitario"/>
-          <figcaption>
-            <p>
-              Antiparasitario
-              Id: 100
-              precio: $100
-            </p>
-            <button>Agregar al carro</button>
-          </figcaption>
-        </figure>
+    <h5>En esta sección te ofrecemos algunos accesorios para tu mascota:</h5>
+      <div id="div-1" class="row row-cols-1 row-cols-md-2 g-8">
+        <div class="col">
+          <div class="card">
+            <img src="productos/cepillo para baño.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cepillo para perros</h5>
+              <p class="card-text">Cepillo masajeador para perros que arrastra cualquier suciedad de tu mascota</p>
+              <p>$450</p>
+              <button type="button" class="btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="productos/manopla para baño.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Manopla</h5>
+              <p class="card-text">Manopla para usar en baño o simplemente para peinar a tu peludo</p>
+              <p>$500</p>
+              <button type="button" class="btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="productos/garrapaticida.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Garrapaticida</h5>
+              <p class="card-text">Protegé a tu mascota de las garrapatas con este producto ideal</p>
+              <p>$300</p>
+              <button type="button" class="btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="productos/peine2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cepillo para perros</h5>
+              <p class="card-text">Cepillo que desenrieda y saca todos esos nudos molestos de tu perro</p>
+              <p>$560</p>
+              <button type="button" class="btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="productos/shampoo para gato.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Shampoo para gatos</h5>
+              <p class="card-text">Shampoo con una delicada y exquisita fragancia para los michis</p>
+              <p>$400</p>
+              <button type="button" class="btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="productos/peine para gato.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cepillo para gato</h5>
+              <p class="card-text">Cepillo para tu minino que quitará todos esos indeseados pelos viejos</p>
+              <p>$450</p>
+              <button type="button" class="btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="productos/perfumes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Perfumes</h5>
+              <p class="card-text">Perfumes con distintas fragancias y para todos los gustos para tu peludo</p>
+              <p>$300 c/u</p>
+              <button type="button" class="btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="productos/antiparasotario para gatos.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Antiparasitario</h5>
+              <p class="card-text">Antiparasotario para gatitos esencial en sus primeros meses</p>
+              <p>$280</p>
+              <button type="button" class="btn btn-info">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -343,5 +302,34 @@ content="Nos dedicamos al aseo de tu mascota con la pasión, cuidado y dedicaci�
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/clasebordon.js"></script>
   </body>
 </html>

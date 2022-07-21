@@ -37,7 +37,6 @@ new Producto(105, "manopla", 400, "productosparaMascotas"),
 new Producto(106, "perfumes", 450, "productosparaMascotas"), 
 new Producto(107, "shampoo para gatos", 350, "productosparaMascotas"), 
 new Producto(108, "shampoo para gatos", 300, "productosparaMascotas"), 
-new Producto(109, "shampoo para pelo blanco", 450, "productosparaMascotas"), 
 new Producto(110, "antiparasitario", 478, "productosparaMascotas"),
 ];
 
@@ -102,4 +101,3 @@ if(productosEnCarro.length > 0) {
     let tel = prompt("Ingrese su tel");
     comprar (nombre,email,tel,productosEnCarro);
 }
-
