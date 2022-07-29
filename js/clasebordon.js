@@ -1,107 +1,121 @@
+const { json } = require("stream/consumers");
+
 const productos = [
-    {id:1, nombre: 'cepillo para baño', precio: 450},
-    {id:2, nombre: 'manopla para baño', precio: 500},
-    {id:3, nombre: 'garrapaticida', precio: 300},
-    {id:4, nombre: 'cepillo para perros', precio: 560},
-    {id:5, nombre: 'shampoo para gatos', precio: 400},
-    {id:6, nombre: 'cepillo para gato', precio: 450},
-    {id:7, nombre: 'perfumes', precio: 300},
-    {id:8, nombre: 'antiparasitario', precio: 280},
+    {id:1, nombre: 'cepillo para baño', desc: "Cepillo masajeador para perros que arrastra cualquier suciedad de tu mascota", precio: 450, img: './productos/cepillo para baño.jpg'},
+    {id:2, nombre: 'manopla para baño', desc: "Manopla para usar en baño o simplemente para peinar a tu peludo", precio: 500, img: './productos/manopla para baño.jpg'},
+    {id:3, nombre: 'garrapaticida', desc: "Protegé a tu mascota de las garrapatas con este producto ideal", precio: 300, img: './productos/garrapaticida.jpg'},
+    {id:4, nombre: 'cepillo para perros', desc: "Cepillo que desenrieda y saca todos esos nudos molestos de tu perro", precio: 560, img: './productos/peine2.jpg'},
+    {id:5, nombre: 'shampoo para gatos', desc: "Shampoo con una delicada y exquisita fragancia para los michis", precio: 400, img: './productos/shampoo para gato.jpg'},
+    {id:6, nombre: 'cepillo para gato', desc: "Cepillo para tu minino que quitará todos esos indeseados pelos viejos", precio: 450, img: './productos/peine para gato.png'},
+    {id:7, nombre: 'perfumes', desc: "Perfumes con distintas fragancias y para todos los gustos para tu peludo", precio: 300, img: './productos/perfumes.jpg'},
+    {id:8, nombre: 'antiparasitario', desc: "Antiparasitario para gatitos esencial en sus primeros meses", precio: 280, img: 'productos/antiparasotario para gatos.jpg'},
 ]
 
 
-for(const producto of productos) {
-    let contenedor = document.getElementById('div-1');
-    contenedor.innerHTML = ` <div id="div-1" class="row row-cols-1 row-cols-md-2 g-8">
-                        <div class="col">
-                            <div class="card">
-                            <img src="productos/cepillo para baño.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Cepillo para perros</h5>
-                            <p class="card-text">Cepillo masajeador para perros que arrastra cualquier suciedad de tu mascota</p>
-                            <p>$450</p>
-                            <button type="button" class="btn btn-info">Agregar al carrito</button>
-                            </div>
-                            </div>
-                            </div>
-                        <div class="col">
-                            <div class="card">
-                            <img src="productos/manopla para baño.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Manopla</h5>
-                            <p class="card-text">Manopla para usar en baño o simplemente para peinar a tu peludo</p>
-                            <p>$500</p>
-                            <button type="button" class="btn btn-info">Agregar al carrito</button>
-                            </div>
-                            </div>
-                            </div>
-                        <div class="col">
-                            <div class="card">
-                            <img src="productos/garrapaticida.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Garrapaticida</h5>
-                            <p class="card-text">Protegé a tu mascota de las garrapatas con este producto ideal</p>
-                            <p>$300</p>
-                            <button type="button" class="btn btn-info">Agregar al carrito</button>
-                            </div>
-                            </div>
-                            </div>
-                        <div class="col">
-                            <div class="card">
-                            <img src="productos/peine2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Cepillo para perros</h5>
-                            <p class="card-text">Cepillo que desenrieda y saca todos esos nudos molestos de tu perro</p>
-                            <p>$560</p>
-                            <button type="button" class="btn btn-info">Agregar al carrito</button>
-                            </div>
-                            </div>
-                            </div>
-                        <div class="col">
-                            <div class="card">
-                            <img src="productos/shampoo para gato.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Shampoo para gatos</h5>
-                            <p class="card-text">Shampoo con una delicada y exquisita fragancia para los michis</p>
-                            <p>$400</p>
-                            <button type="button" class="btn btn-info">Agregar al carrito</button>
-                            </div>
-                            </div>
-                            </div>
-                        <div class="col">
-                            <div class="card">
-                            <img src="productos/peine para gato.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Cepillo para gato</h5>
-                            <p class="card-text">Cepillo para tu minino que quitará todos esos indeseados pelos viejos</p>
-                            <p>$450</p>
-                            <button type="button" class="btn btn-info">Agregar al carrito</button>
-                            </div>
-                            </div>
-                            </div>
-                        <div class="col">
-                            <div class="card">
-                            <img src="productos/perfumes.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Perfumes</h5>
-                            <p class="card-text">Perfumes con distintas fragancias y para todos los gustos para tu peludo</p>
-                            <p>$300 c/u</p>
-                            <button type="button" class="btn btn-info">Agregar al carrito</button>
-                            </div>
-                            </div>
-                            </div>
-                        <div class="col">
-                            <div class="card">
-                            <img src="productos/antiparasotario para gatos.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Antiparasitario</h5>
-                            <p class="card-text">Antiparasotario para gatitos esencial en sus primeros meses</p>
-                            <p>$280</p>
-                            <button type="button" class="btn btn-info">Agregar al carrito</button>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-    document.body.appendChild(contenedor);
-} `;
+const contenedorProductos = document.getElementById('container');
+
+const contenedorCarrito = document.getElementById('carrito-contenedor');
+
+const botonVaciar = document.getElementById('vaciar-carrito')
+
+const contadorCarrito = document.getElementById('contador-carrito')
+
+const precioTotal = document.getElementById('precioTotal')
+
+let carrito = []
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('carrito')){
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        actualizarCarrito()
+    }
+} )
+
+
+
+botonVaciar.addEventListener('click', () => {
+    carrito.length = 0
+    actualizarCarrito()
+})
+
+
+
+productos.forEach((productos) => {
+    const container = document.createElement('container')
+    container.classList.add('productos')
+    container.innerHTML = `
+    <h3>${productos.nombre}</h3>
+    <p>${productos.desc}</p>
+    <p class="precioProducto">Precio:$ ${productos.precio}</p>
+    <button id="agregar${productos.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
+    `
+contenedorProductos.appendChild(container)
+
+const boton = document.getElementById('agregar${productos.id}')
+
+boton.addEventListener('click', () => {
+    agregarAlCarrito(productos.id)
+})
+
+})
+
+
+const agregarAlCarrito = (prodId) => {
+const existe = carrito.some (prod => prod.id === prodId)
+
+if (existe){
+    const prod = carrito.map(prod => {
+        if(prod.id === prodId){
+            prod.cantidad++
+        }
+    })
+}else {
+    const item = productos.find ((prod) => prod.id === prodId)
+    carrito.push(item)
+
+    console.log(carrito)
+}
+}
+actualizarCarrito()
+
+
+
+const eliminarDelCarrito = (prodId) => {
+    const item = carrito.find((prod) => prod.id === prodId)
+    const indice = carrito.indexOf(item)
+
+    carrito.splice(indice, 1)
+    actualizarCarrito()
+}
+
+
+
+
+
+const actualizarCarrito = () => {
+    contenedorCarrito.innerHTML = ""
+
+
+    carrito.forEach((prod) => {
+        const div = document.createElement('div')
+        div.className = ('productoEnCarrito')
+        div.innerHTML = `
+        <p>${prod.nombre}</p>
+        <p>Precio:$${prod.precio}</p>
+        <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
+        <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+        `
+
+        contenedorCarrito.appendChild(div)
+        localStorage.setItem('carrito', JSON.stringify(carrito))
+
+    })
+contadorCarrito.innerText = carrito.length
+precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.precio, 0)
+
+
+
+}
+
+
 

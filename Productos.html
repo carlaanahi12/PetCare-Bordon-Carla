@@ -82,6 +82,7 @@ content="Nos dedicamos al aseo de tu mascota con la pasi√≥n, cuidado y dedicaci√
               </li>
             </ul>
             <img src="productos/icons8-agregar-a-carrito-de-compras-80.png" alt="">
+            <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
             <a href="comprar.html">Terminar Compra</a>
           </div>
         </nav>
@@ -93,15 +94,15 @@ content="Nos dedicamos al aseo de tu mascota con la pasi√≥n, cuidado y dedicaci√
 <!-- SECTION -->
     <section>
     <h5>En esta secci√≥n te ofrecemos algunos accesorios para tu mascota:</h5>
-      <div id="div-1" class="row row-cols-1 row-cols-md-2 g-8">
+      <div id="container" class="row row-cols-1 row-cols-md-2 g-8">
         <div class="col">
           <div class="card">
             <img src="productos/cepillo para ba√±o.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Cepillo para perros</h5>
+              <h5 id="nombre" class="card-title">Cepillo para perros</h5>
               <p class="card-text">Cepillo masajeador para perros que arrastra cualquier suciedad de tu mascota</p>
-              <p>$450</p>
-              <button type="button" class="btn btn-info">Agregar al carrito</button>
+              <p class="precioProducto">Precio total: $<span id="precioTotal">$450</span></p>
+              <button id="vaciar-carrito" type="submit" class="addToCart">Agregar al carrito</button>
             </div>
           </div>
         </div>
@@ -111,8 +112,8 @@ content="Nos dedicamos al aseo de tu mascota con la pasi√≥n, cuidado y dedicaci√
             <div class="card-body">
               <h5 class="card-title">Manopla</h5>
               <p class="card-text">Manopla para usar en ba√±o o simplemente para peinar a tu peludo</p>
-              <p>$500</p>
-              <button type="button" class="btn btn-info">Agregar al carrito</button>
+              <p class="precioProducto">Precio total: $<span id="precioTotal">$500</span></p>
+              <button id="vaciar-carrito" type="submit" class="addToCart">Agregar al carrito</button>
             </div>
           </div>
         </div>
@@ -122,8 +123,8 @@ content="Nos dedicamos al aseo de tu mascota con la pasi√≥n, cuidado y dedicaci√
             <div class="card-body">
               <h5 class="card-title">Garrapaticida</h5>
               <p class="card-text">Proteg√© a tu mascota de las garrapatas con este producto ideal</p>
-              <p>$300</p>
-              <button type="button" class="btn btn-info">Agregar al carrito</button>
+              <p class="precioProducto">Precio total: $<span id="precioTotal">$300</span></p>
+              <button id="vaciar-carrito" type="submit" class="addToCart">Agregar al carrito</button>
             </div>
           </div>
         </div>
@@ -133,8 +134,8 @@ content="Nos dedicamos al aseo de tu mascota con la pasi√≥n, cuidado y dedicaci√
             <div class="card-body">
               <h5 class="card-title">Cepillo para perros</h5>
               <p class="card-text">Cepillo que desenrieda y saca todos esos nudos molestos de tu perro</p>
-              <p>$560</p>
-              <button type="button" class="btn btn-info">Agregar al carrito</button>
+              <p class="precioProducto">Precio total: $<span id="precioTotal">$560</span></p>
+              <button id="vaciar-carrito" type="submit" class="addToCart">Agregar al carrito</button>
             </div>
           </div>
         </div>
@@ -144,8 +145,8 @@ content="Nos dedicamos al aseo de tu mascota con la pasi√≥n, cuidado y dedicaci√
             <div class="card-body">
               <h5 class="card-title">Shampoo para gatos</h5>
               <p class="card-text">Shampoo con una delicada y exquisita fragancia para los michis</p>
-              <p>$400</p>
-              <button type="button" class="btn btn-info">Agregar al carrito</button>
+              <p class="precioProducto">Precio total: $<span id="precioTotal">$400</span></p>
+              <button id="vaciar-carrito" type="submit" class="addToCart">Agregar al carrito</button>
             </div>
           </div>
         </div>
@@ -155,8 +156,8 @@ content="Nos dedicamos al aseo de tu mascota con la pasi√≥n, cuidado y dedicaci√
             <div class="card-body">
               <h5 class="card-title">Cepillo para gato</h5>
               <p class="card-text">Cepillo para tu minino que quitar√° todos esos indeseados pelos viejos</p>
-              <p>$450</p>
-              <button type="button" class="btn btn-info">Agregar al carrito</button>
+              <p class="precioProducto">Precio total: $<span id="precioTotal">$450</span></p>
+              <button id="vaciar-carrito" type="submit" class="addToCart">Agregar al carrito</button>
             </div>
           </div>
         </div>
@@ -166,8 +167,8 @@ content="Nos dedicamos al aseo de tu mascota con la pasi√≥n, cuidado y dedicaci√
             <div class="card-body">
               <h5 class="card-title">Perfumes</h5>
               <p class="card-text">Perfumes con distintas fragancias y para todos los gustos para tu peludo</p>
-              <p>$300 c/u</p>
-              <button type="button" class="btn btn-info">Agregar al carrito</button>
+              <p class="precioProducto">Precio total: $<span id="precioTotal">$300</span></p>
+              <button id="vaciar-carrito" type="submit" class="addToCart">Agregar al carrito</button>
             </div>
           </div>
         </div>
@@ -176,14 +177,26 @@ content="Nos dedicamos al aseo de tu mascota con la pasi√≥n, cuidado y dedicaci√
             <img src="productos/antiparasotario para gatos.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Antiparasitario</h5>
-              <p class="card-text">Antiparasotario para gatitos esencial en sus primeros meses</p>
-              <p>$280</p>
-              <button type="button" class="btn btn-info">Agregar al carrito</button>
+              <p class="card-text">Antiparasitario para gatitos esencial en sus primeros meses</p>
+              <p class="precioProducto">Precio total: $<span id="precioTotal">$280</span></p>
+              <button id="vaciar-carrito" type="submit" class="addToCart">Agregar al carrito</button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- FIN SECTION -->
 
@@ -304,32 +317,7 @@ content="Nos dedicamos al aseo de tu mascota con la pasi√≥n, cuidado y dedicaci√
     ></script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
     <script src="js/clasebordon.js"></script>
   </body>
 </html>
